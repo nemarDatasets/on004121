@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004121",
-  "source": "openneuro",
-  "source_id": "ds004121",
+  "pipeline_stage": "enriched",
   "title": "BCIT Mind Wandering",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jonathan Touryan (data and curation)": {},
     "Greg Apker (data)": {},
@@ -15,26 +15,156 @@
     "Tony Johnson (curation)": {},
     "Kay Robbins (curation)": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004121.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.3389/fnins.2014.00155.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.physbeh.2015.05.026.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1080/00222895.2014.959887, 10.1080/00222895.2014.959887.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2017.02.057.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116361",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116054",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.3389/fnins.2014.00155",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1016/j.physbeh.2015.05.026",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1080/00222895.2014.959887",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2017.02.057",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004118",
+      "identifier_type": "DOI",
+      "relation_type": "IsSupplementTo"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004121",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research was sponsored by the Army Research Laboratory and was accomplished under Cooperative Agreement Number W911NF-10-0-0002."
+      "funder_name": "Army Research Laboratory",
+      "award_number": "W911NF-10-0-0002"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".ipynb",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".xlsx"
+  ],
+  "description": "The BCIT Mind Wandering dataset comprises electroencephalography (EEG), eye tracking, and vehicle performance data collected during prolonged simulated driving tasks designed to assess fatigue-related biomarkers and driver performance under different cognitive load conditions. Participants performed three counterbalanced 30-minute driving sessions with different background audio conditions (task-relevant traffic safety, non-task-relevant sports broadcast, and internal focus mindfulness breathing) while responding to vigilance targets (police vehicle identification) and managing vehicle perturbations. This dataset extends prior driving research by incorporating extended time-on-task measurements and novel audio manipulations to investigate mind wandering and fatigue-induced performance decrements.",
+  "methods_description": "Participants performed a calibration driving task (15 minutes) followed by three counterbalanced Mind Wandering conditions (30 minutes each). EEG was recorded using BioSemi 64-channel systems (plus 8 additional channels including eye and mastoid references) at 2048 Hz. Eye tracking was performed using Sensomotoric Instruments REDEYE250. Vehicle data were logged at 100 Hz from a driving simulator with steering wheel and pedal controls. Participants maintained lane position while responding to lateral vehicle perturbations and identifying police vehicles (vigilance task). Background audio conditions varied across sessions: task-relevant (traffic safety), non-task-relevant (sports broadcast), and internal focus (mindfulness breathing). Subjective fatigue was assessed using Task-Induced Fatigue Scale (TIFS), Karolinska Sleepiness Scale (KSS), and Visual Analog Scale of Fatigue (VAS-F).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "fatigue"
+    },
+    {
+      "term": "mind wandering"
+    },
+    {
+      "term": "driving simulation"
+    },
+    {
+      "term": "vigilance"
+    },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "steering control"
+    },
+    {
+      "term": "fatigue detection"
+    },
+    {
+      "term": "driver performance"
+    },
+    {
+      "term": "cognitive load"
+    },
+    {
+      "term": "audio manipulation"
+    },
+    {
+      "term": "perturbation response"
+    },
+    {
+      "term": "lane keeping"
+    },
+    {
+      "term": "vigilance task"
+    },
+    {
+      "term": "simulator sickness"
+    },
+    {
+      "term": "biomarkers"
+    }
+  ],
+  "source_hash": "7e28d2175270657edfc93756a82d23f45c85e6c598cc1951ec43bc1bc5512092"
 }
