@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "BCIT Mind Wandering",
-  "description": "The BCIT Mind Wandering dataset comprises electroencephalography (EEG), eye tracking, and vehicle performance data collected during prolonged simulated driving tasks designed to assess fatigue-related biomarkers and driver performance. Participants performed 30-minute driving sessions under three audio conditions (task-relevant, non-task-relevant, and internal focus) while responding to vigilance targets and managing vehicle perturbations. This dataset extends prior driving research by incorporating extended time-on-task measurements and novel audio manipulations to investigate mind wandering and fatigue-induced performance changes.",
-  "methods_description": "EEG was recorded using BioSemi 64-channel systems (plus 8 additional channels including 4 eye and 2 mastoid channels) at 2048 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250. Driving simulator data (steering wheel angle, lane position, heading error) were logged at 100 Hz. Participants completed a calibration driving task (15 minutes, steering only) followed by three counterbalanced 30-minute mind wandering conditions with different audio backgrounds. Lateral perturbations were applied to the vehicle, and participants performed a vigilance task identifying police vehicles. Subjective fatigue measures included Task-Induced Fatigue Scale (TIFS), Karolinska Sleepiness Scale (KSS), and Visual Analog Scale of Fatigue (VAS-F).",
+  "description": "This dataset contains EEG, eye-tracking, and simulated driving performance data collected during the BCIT Mind Wandering study, in which subjects performed a prolonged simulated driving task under varying background audio conditions (task-relevant, non-task-relevant, and internal focus) while responding to periodic lateral perturbations and a vigilance task requiring detection of police vehicles. The study aimed to identify EEG-based biomarkers of driver fatigue and mind wandering by comparing extended time-on-task driving performance to a non-fatigued calibration session. Data were collected at Teledyne Laboratories under a US Army Research Laboratory contract as part of a broader effort to develop predictive fatigue algorithms from neural and behavioral signals.",
+  "methods_description": "Subjects performed a 15-minute Calibration Driving task followed by three 30-minute Mind Wandering conditions (A, B, C) with counterbalanced order, each featuring different background audio (task-relevant, non-task-relevant, or internal focus) during simulated driving with periodic lateral perturbations. EEG was recorded using a BioSemi 64+8 channel system (plus 4 eye and 2 mastoid channels) at 2048 Hz sampling rate, eye tracking via SMI REDEYE250, and vehicle/driving data logged at 100 Hz using a Real Time Technologies driving simulator with a 900 Hz video refresh rate. Additional questionnaire data (fatigue and sleepiness scales) were collected but are available only upon request.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,49 +22,24 @@
       "term": "EEG"
     },
     {
-      "term": "driver fatigue"
+      "term": "Fatigue",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005221"
+    },
+    {
+      "term": "driving simulation"
     },
     {
       "term": "mind wandering"
     },
     {
-      "term": "simulated driving"
+      "term": "eye tracking"
     },
     {
       "term": "vigilance"
     },
     {
-      "term": "eye tracking"
-    },
-    {
-      "term": "performance monitoring"
-    },
-    {
-      "term": "fatigue detection"
-    },
-    {
-      "term": "biomarkers"
-    },
-    {
-      "term": "cognitive load"
-    },
-    {
-      "term": "driving simulator"
-    },
-    {
-      "term": "perturbations"
-    },
-    {
-      "term": "audio manipulation"
-    },
-    {
-      "term": "steering control"
-    },
-    {
-      "term": "simulator sickness"
-    },
-    {
-      "term": "fatigue measurement"
+      "term": "brain-computer interface"
     }
   ],
   "related_identifiers": [
@@ -104,11 +79,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004121",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.3389/fnins.2014.00155",
       "identifier_type": "DOI",
       "relation_type": "IsReferencedBy"
@@ -129,11 +99,6 @@
       "relation_type": "IsReferencedBy"
     },
     {
-      "identifier": "10.18112/openneuro.ds004118",
-      "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004121",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
@@ -142,6 +107,11 @@
       "identifier": "10.18112/openneuro.ds004121.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
