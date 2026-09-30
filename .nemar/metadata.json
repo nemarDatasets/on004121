@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCIT Mind Wandering",
-  "description": "This dataset contains EEG, eye-tracking, and simulated driving performance data collected during the BCIT Mind Wandering study, in which subjects performed a prolonged simulated driving task under varying background audio conditions (task-relevant, non-task-relevant, and internal focus) while responding to periodic lateral perturbations and a vigilance task requiring detection of police vehicles. The study aimed to identify EEG-based biomarkers of driver fatigue and mind wandering by comparing extended time-on-task driving performance to a non-fatigued calibration session. Data were collected at Teledyne Laboratories under a US Army Research Laboratory contract as part of a broader effort to develop predictive fatigue algorithms from neural and behavioral signals.",
-  "methods_description": "Subjects performed a 15-minute Calibration Driving task followed by three 30-minute Mind Wandering conditions (A, B, C) with counterbalanced order, each featuring different background audio (task-relevant, non-task-relevant, or internal focus) during simulated driving with periodic lateral perturbations. EEG was recorded using a BioSemi 64+8 channel system (plus 4 eye and 2 mastoid channels) at 2048 Hz sampling rate, eye tracking via SMI REDEYE250, and vehicle/driving data logged at 100 Hz using a Real Time Technologies driving simulator with a 900 Hz video refresh rate. Additional questionnaire data (fatigue and sleepiness scales) were collected but are available only upon request.",
+  "description": "EEG dataset from a long-duration simulated driving study in which participants drove in a visually complex environment with lateral vehicle perturbations, a vigilance task (detecting police vehicles), and different background audio conditions (task-relevant, non-task-relevant, internal focus). The study aimed to identify markers of driver fatigue and mind wandering during prolonged time-on-task, in comparison with a non-fatigued calibration driving session. Data include 64-channel BioSemi EEG, eye tracking, and vehicle logs.",
+  "methods_description": "Participants completed a practice session, then a 15-minute Calibration Driving task followed by three counter-balanced 30-minute Mind Wandering driving conditions (A: task-relevant audio, B: non-task-relevant audio, C: internal-focus audio) in a driving simulator. EEG was recorded with BioSemi 64(+8) channel systems with 4 eye and 2 mastoid channels at 2048 Hz, along with SMI REDEYE250 eye tracking and vehicle logs at 100 Hz. Participants responded to lateral perturbations and pressed a button on detecting police vehicles.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,24 +22,22 @@
       "term": "EEG"
     },
     {
-      "term": "Fatigue",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005221"
-    },
-    {
       "term": "driving simulation"
     },
     {
       "term": "mind wandering"
     },
     {
-      "term": "eye tracking"
+      "term": "fatigue"
     },
     {
       "term": "vigilance"
     },
     {
-      "term": "brain-computer interface"
+      "term": "eye tracking"
+    },
+    {
+      "term": "attention"
     }
   ],
   "related_identifiers": [
@@ -125,7 +123,7 @@
     "eeg"
   ],
   "sizes": [
-    "25.7 GB (80 files)"
+    "23.91 GB (80 files)"
   ],
   "formats": [
     ".ipynb",
